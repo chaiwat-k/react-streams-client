@@ -7,7 +7,7 @@ import StreamEdit from './streams/StreamEdit';
 import StreamDelete from './streams/StreamDelete';
 import StreamShow from './streams/StreamShow';
 
-const App = () => {
+const App = (props) => {
     return (
         <div className="ui container">
             <BrowserRouter>
