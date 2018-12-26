@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import GoogleAuth from './GoogleAuth';
 
 const Header = (props) => {
+    console.log(process.env.PORT);
     return (
         <div className="ui secondary pointing menu">
             <Link to="/" className="item">Streamer</Link>
             <div className="right menu">
                 <Link to="/" className="item">All Streams</Link>
-                <p>OAUTH_CLIENT_ID: {props.env.OAUTH_CLIENT_ID}</p>
+                <GoogleAuth env={props.env} />
             </div>
         </div>
     );
