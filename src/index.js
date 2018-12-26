@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import env from '../config/env';
+import env from './config/env';
 import App from './components/App';
 
 ReactDOM.render(
