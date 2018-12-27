@@ -6,6 +6,7 @@ import StreamCreate from './streams/StreamCreate';
 import StreamEdit from './streams/StreamEdit';
 import StreamDelete from './streams/StreamDelete';
 import StreamShow from './streams/StreamShow';
+//import history from '../history';
 
 const App = (props) => {
     return (
@@ -15,7 +16,7 @@ const App = (props) => {
                     <Header env={props.env} />
                     <Route path="/" exact component={StreamList} />
                     <Route path="/streams/new" component={StreamCreate} />
-                    <Route path="/streams/edit" component={StreamEdit} />
+                    <Route path="/streams/edit/:id" component={StreamEdit} />
                     <Route path="/streams/delete" component={StreamDelete} />
                     <Route path="/streams/show" component={StreamShow} />
                 </div>
